@@ -2,7 +2,7 @@
 
 :root {
   --cor-de-fundo: #1e1e1e;
-  --verde: #6fff57;
+  --verde: #6bff57;
   --branco: #ffffff;
   --botao-ativo: #3a375e;
   --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -59,8 +59,12 @@ body {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  /* Código omitido */
-
+  .botoes {
+    display: flex;
+  }
+  .botao:first-child {
+    border-radius: 40px 0 0 0;
+  }
   .botao:last-child {
     border-radius: 0 40px 0 0;
   }
